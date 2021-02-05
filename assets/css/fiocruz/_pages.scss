@@ -1,0 +1,38 @@
+/*------------------------------------*\
+  #PAGE-INSTITUTIONAL
+\*------------------------------------*/
+
+.institutional--section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.institutional--box {
+  list-style: 0;
+  margin: 10px 0;
+  min-height: 400px;
+}
+
+.institutional--box-div {
+  height: 100%;
+  min-height: 400px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.institutional--box-div > p {
+  color: white;
+}
+
+.institutional--box-div > ul {
+  list-style: none !important;
+}
+
+.institutional--box-div > ul > li {
+  color: white;
+  text-align: center;
+}
+
+.institutional--box__color__primary {    background: $color-primary-darken-01; }
+.institutional--box__color__secondary {  background: $color-primary-darken-02; }
+.institutional--box__color__tertiary {   background: $color-primary-default; }

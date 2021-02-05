@@ -1,0 +1,22 @@
+.header--main {
+  background: $color-primary-default;
+}
+
+.header__padding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__nowrap {
+  white-space: nowrap;
+}
+
+.icon__search-top {
+  top: auto !important;
+}
+
+.social__header {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}

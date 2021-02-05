@@ -1,0 +1,200 @@
+@import "configs/colors";
+@import "fiocruz/base";
+@import "fiocruz/images";
+@import "fiocruz/header";
+@import "fiocruz/menu";
+@import "fiocruz/fullbanner";
+@import "fiocruz/pages";
+
+.news--section {
+    padding-bottom: 64px;
+    padding-top: 64px;
+
+
+    h5 {
+        color: $color-primary-default;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+
+        &::after {
+            background: $color-primary-default;
+            content: "";
+            left: 0;
+            height: 1px;
+            position: absolute;
+            margin-top: -.5px;
+            top: 50%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        span {
+            background: white;
+            padding: 0 35px;
+            position: relative;
+            z-index: 9;
+        }
+    }
+}
+
+.news--box {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.news--subtitle {
+    color: $color-secondary-07;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom:16px;
+    margin-top: 16px;
+    text-transform: uppercase;
+}
+
+.news--title {
+    color: $color-secondary-09;
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 24px;    
+    margin: 0;
+}
+
+.news--abstract {
+    color: $color-secondary-07;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.news--read-more {
+    color: $color-secondary-07;
+    display: block;
+    font-style: italic;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.features--section {
+    background: $color-primary-default;
+    padding-bottom: 64px;
+    padding-top: 64px;
+
+    h5 {
+        color: white;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+
+        &::after {
+            background: white;
+            content: "";
+            left: 0;
+            height: 1px;
+            position: absolute;
+            margin-top: -.5px;
+            top: 50%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        span {
+            background: $color-primary-default;
+            padding: 0 35px;
+            position: relative;
+            z-index: 9;
+        }
+    }
+}
+
+.feature--box {
+    // height: 280px;
+    // margin: 15px auto;
+    // position: relative;
+    // width: 280px;
+}
+
+.feature--text-box {
+  align-items: center;
+  background: rgba(0,0,0,.63);
+  display: grid;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  align-content: center;
+}
+
+.feature--text-box svg {
+    color: white;
+    text-align: center;
+    width: 100% !important;
+}
+
+.feature--title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer {
+    background: $color-primary-darken-02;
+    
+    &-site-map div {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    a {
+        color: $color-secondary-01;
+
+        &:hover {
+            color: $color-primary-lighten-01;
+        }
+    }
+}
+
+.social-network {
+    border: 0;
+
+    a {
+        align-items: center;
+        background: $color-secondary-01;
+        border-radius: 50%;
+        display: flex;
+        font-size: 20px;
+        height: 32px;
+        justify-content: center;
+        padding: 0 !important; 
+        text-align: center;  
+        width: 32px;
+
+        * {
+            fill: $color-primary-darken-01;
+            path: $color-primary-darken-01;
+        }
+    }
+}
+
+
+
+.box-map {
+    background: $color-primary-default;
+    color: $color-secondary-01;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+#map {
+    height: 250px;
+    width: 100%;
+}

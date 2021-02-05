@@ -1,0 +1,44 @@
+/*------------------------------------*\
+  #FULLBANNERS
+\*------------------------------------*/
+
+.fullbanner--default {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  img {
+    position: fixed;
+    left:0;
+    top: 0;
+    width:100%;
+    min-height: 400px;
+    z-index: -1;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BOX-IMAGES
+\*------------------------------------*/
+
+.box--image {
+  position: relative;
+  width: 100%;
+}
+
+.box--image:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content--box-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
