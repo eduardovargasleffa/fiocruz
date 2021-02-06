@@ -233,53 +233,99 @@
         </div>
       </nav>
     </header>
-    
+    <div class="fullbanner--default">
+        <img src="assets/images/noticias/noticias.jpg">
+    </div>
     <main>
-        
-      <!-- Slider main container -->
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <a href="#">
-              <img class="d-block w-100" src="assets/images/fullbanner.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <img class="d-block w-100" src="assets/images/fullbanner-2.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <img class="d-block w-100" src="assets/images/fullbanner-3.png" alt="">
-            </a>
-          </div>
-        </div>
-        
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
-        
-        <section class="news--section">
+        <section class="news--filter news--filter__background">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h5>
-                            <span>
-                                Notícias
-                            </span>
-                        </h5>
+                <div class="row align-items-end">
+                    <div class="col-sm-6">
+                      <div class="br-input">
+                        <label for="news--search">Buscar por tema</label>
+                        <input id="news--search" type="text" placeholder="Digite um termo">
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="br-select">
+                            <div class="br-input">
+                              <label for="select-simple">Área</label>
+                              <input id="select-simple" type="text" placeholder="Selecione uma área">
+                              <button class="br-button circle small" type="button" tabindex="-1" data-trigger><span class="sr-only">Exibir lista</span><i class="fas fa-angle-down"></i></button>
+                            </div>
+                            <div class="br-list" tabindex="0">
+                              <div class="item divider" tabindex="-1">
+                                <div class="content">
+                                  <div class="br-radio">
+                                    <input id="rb0" type="radio" name="radio">
+                                    <label for="rb0">Educação</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item divider" tabindex="-1">
+                                <div class="content">
+                                  <div class="br-radio">
+                                    <input id="rb1" type="radio" name="radio">
+                                    <label for="rb1">Atenção ou pesquisa</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="br-select">
+                            <div class="br-input">
+                              <label for="select-simple">Mês/Ano</label>
+                              <input id="select-simple" type="text" placeholder="Selecione uma data">
+                              <button class="br-button circle small" type="button" tabindex="-1" data-trigger><span class="sr-only">Exibir lista</span><i class="fas fa-angle-down"></i></button>
+                            </div>
+                            <div class="br-list" tabindex="0">
+                              <div class="item divider" tabindex="-1">
+                                <div class="content">
+                                  <div class="br-radio">
+                                    <input id="rb0" type="radio" name="radio">
+                                    <label for="rb0">Out/2020</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item divider" tabindex="-1">
+                                <div class="content">
+                                  <div class="br-radio">
+                                    <input id="rb0" type="radio" name="radio">
+                                    <label for="rb0">Nov/2020</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item divider" tabindex="-1">
+                                <div class="content">
+                                  <div class="br-radio">
+                                    <input id="rb0" type="radio" name="radio">
+                                    <label for="rb0">Dez/2020</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item divider" tabindex="-1">
+                                <div class="content">
+                                  <div class="br-radio">
+                                    <input id="rb1" type="radio" name="radio">
+                                    <label for="rb1">Jan/2021</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="br-button primary mt-3 mt-sm-0 ml-sm-3" type="button">
+                            Buscar
+                        </button>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="news--section">
+            <div class="container">
                 <div class="row">
                     <div class="news--box col-12 col-sm-6 col-md-4">
                         <a href="#">
@@ -314,120 +360,128 @@
                           <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
                         </a>
                     </div>
-
-                    <div class="news--box col-12 col-md-4">
+                    <div class="news--box col-12 col-sm-6 col-md-4">
                         <a href="#">
-                            <span class="news--subtitle">Saúde e vigilância sanitária</span>
-                            <h6 class="news--title">Como vencer o vírus em meio a uma pandemia</h6>
-                            <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
-                            <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
+                          <div class="box--image">
+                            <img class="content--box-image" src="assets/images/covid.jpg" alt="">
+                          </div>
+                          <span class="news--subtitle">Saúde e vigilância sanitária</span>
+                          <h6 class="news--title">Medicação. Saiba o que não tomar antes de se vacinar.</h6>
+                          <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
+                          <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
                         </a>
                     </div>
-                    <div class="news--box col-12 col-md-4">
+                    <div class="news--box col-12 col-sm-6 col-md-4">
                         <a href="#">
-                            <span class="news--subtitle">Saúde e vigilância sanitária</span>
-                            <h6 class="news--title">Trabalho em equipe, uma verdadeira solução para vencer</h6>
-                            <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
-                            <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
+                          <div class="box--image">
+                            <img class="content--box-image" src="assets/images/trabalho-em-equipe.jpg" alt="">
+                          </div>
+                          <span class="news--subtitle">Saúde e vigilância sanitária</span>
+                          <h6 class="news--title">Medicação. Saiba o que não tomar antes de se vacinar.</h6>
+                          <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
+                          <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
                         </a>
                     </div>
-                    <div class="news--box col-12 col-md-4">
+                    <div class="news--box col-12 col-sm-6 col-md-4 mx-auto">
                         <a href="#">
-                            <span class="news--subtitle">Saúde e vigilância sanitária</span>
-                            <h6 class="news--title">Medicação. Saiba o que não tomar antes de se vacinar.</h6>
-                            <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
-                            <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
+                          <div class="box--image">
+                            <img class="content--box-image" src="assets/images/medicacao.jpg" alt="">
+                          </div>
+                          <span class="news--subtitle">Saúde e vigilância sanitária</span>
+                          <h6 class="news--title">Medicação. Saiba o que não tomar antes de se vacinar.</h6>
+                          <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
+                          <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="news--box col-12 col-sm-6 col-md-4">
+                        <a href="#">
+                          <div class="box--image">
+                            <img class="content--box-image" src="assets/images/covid.jpg" alt="">
+                          </div>
+                          <span class="news--subtitle">Saúde e vigilância sanitária</span>
+                          <h6 class="news--title">Medicação. Saiba o que não tomar antes de se vacinar.</h6>
+                          <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
+                          <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="news--box col-12 col-sm-6 col-md-4">
+                        <a href="#">
+                          <div class="box--image">
+                            <img class="content--box-image" src="assets/images/trabalho-em-equipe.jpg" alt="">
+                          </div>
+                          <span class="news--subtitle">Saúde e vigilância sanitária</span>
+                          <h6 class="news--title">Medicação. Saiba o que não tomar antes de se vacinar.</h6>
+                          <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
+                          <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="news--box col-12 col-sm-6 col-md-4 mx-auto">
+                        <a href="#">
+                          <div class="box--image">
+                            <img class="content--box-image" src="assets/images/medicacao.jpg" alt="">
+                          </div>
+                          <span class="news--subtitle">Saúde e vigilância sanitária</span>
+                          <h6 class="news--title">Medicação. Saiba o que não tomar antes de se vacinar.</h6>
+                          <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
+                          <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="news--box col-12 col-sm-6 col-md-4">
+                        <a href="#">
+                          <div class="box--image">
+                            <img class="content--box-image" src="assets/images/covid.jpg" alt="">
+                          </div>
+                          <span class="news--subtitle">Saúde e vigilância sanitária</span>
+                          <h6 class="news--title">Medicação. Saiba o que não tomar antes de se vacinar.</h6>
+                          <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
+                          <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="news--box col-12 col-sm-6 col-md-4">
+                        <a href="#">
+                          <div class="box--image">
+                            <img class="content--box-image" src="assets/images/trabalho-em-equipe.jpg" alt="">
+                          </div>
+                          <span class="news--subtitle">Saúde e vigilância sanitária</span>
+                          <h6 class="news--title">Medicação. Saiba o que não tomar antes de se vacinar.</h6>
+                          <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
+                          <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="news--box col-12 col-sm-6 col-md-4 mx-auto">
+                        <a href="#">
+                          <div class="box--image">
+                            <img class="content--box-image" src="assets/images/medicacao.jpg" alt="">
+                          </div>
+                          <span class="news--subtitle">Saúde e vigilância sanitária</span>
+                          <h6 class="news--title">Medicação. Saiba o que não tomar antes de se vacinar.</h6>
+                          <p class="news--abstract">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam sit? Quibusdam exercitationem non excepturi maiores itaque officia expedita adipisci optio!</p>
+                          <span class="news--read-more">Leia mais <i class="fas fa-long-arrow-alt-right"></i></span>
                         </a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 mx-auto text-center">
-                        <a class="br-button secondary mt-3 text-uppercase" href="noticias.html">
-                            Mais notícias
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="features--section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h5>
-                            <span>
-                                Destaques
-                            </span>
-                        </h5>
-                    </div>
-                </div>
-                <div class="feature row">
-                    <div class="col-12 col-sm-6 col-md-4 my-2">
-                        <div class="feature--box">
-                            <div class="box--image">
-                              <img class="content--box-image feature--img" src="assets/images/coronavirus.jpg" alt="">
-                              <div class="feature--text-box text-center">
-                                <h6 class="feature--title">Coronavírus</h6>
-                                <i class="fas fa-arrow-right"></i>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 my-2">
-                        <div class="feature--box">
-                            <div class="box--image">
-                              <img class="content--box-image feature--img" src="assets/images/eventos.jpg" alt="">
-                              <div class="feature--text-box text-center">
-                                <h6 class="feature--title">Eventos</h6>
-                                <i class="fas fa-arrow-right"></i>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 my-2">
-                        <div class="feature--box">
-                            <div class="box--image">
-                              <img class="content--box-image feature--img" src="assets/images/cursos-e-processos-seletivos.jpg" alt="">
-                              <div class="feature--text-box text-center">
-                                <h6 class="feature--title">Cursos e processos seletivos</h6>
-                                <i class="fas fa-arrow-right"></i>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 my-2">
-                        <div class="feature--box">
-                            <div class="box--image">
-                              <img class="content--box-image feature--img" src="assets/images/transparencia.jpg" alt="">
-                              <div class="feature--text-box text-center">
-                                <h6 class="feature--title">Transparência</h6>
-                                <i class="fas fa-arrow-right"></i>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 my-2">
-                        <div class="feature--box">
-                            <div class="box--image">
-                              <img class="content--box-image feature--img" src="assets/images/acoes.jpg" alt="">
-                              <div class="feature--text-box text-center">
-                                <h6 class="feature--title">Ações e programas</h6>
-                                <i class="fas fa-arrow-right"></i>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 my-2">
-                        <div class="feature--box">
-                            <div class="box--image">
-                              <img class="content--box-image feature--img" src="assets/images/vacina.jpg" alt="">
-                              <div class="feature--text-box text-center">
-                                <h6 class="feature--title">Vacina Sim</h6>
-                                <i class="fas fa-arrow-right"></i>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-12 mt-5 text-center">
+                    <nav class="br-pagination" aria-label="Paginação Padrão">
+                        <ul>
+                        <li data-previous-page><a href="javascript:void(0)"><i class="fas fa-chevron-left" aria-hidden="true"></i><span class="sr-only">anterior</span></a></li>
+                        <li class="active" data-page><a href="javascript:void(0)">1</a></li>
+                        <li data-page><a href="javascript:void(0)">2</a></li>
+                        <li data-page><a href="javascript:void(0)">3</a></li>
+                        <li data-page><a href="javascript:void(0)">4</a></li>
+                        <li data-page><a href="javascript:void(0)">5</a></li>
+                        <li data-page><a href="javascript:void(0)">6</a></li>
+                        <li data-page><a href="javascript:void(0)">7</a></li>
+                        <li data-page><a href="javascript:void(0)">8</a></li>
+                        <li data-page><a href="javascript:void(0)">9</a></li>
+                        <li data-page><a href="javascript:void(0)">10</a></li>
+                        <li data-page><a href="javascript:void(0)">11</a></li>
+                        <li data-page><a href="javascript:void(0)">12</a></li>
+                        <li data-page><a href="javascript:void(0)">13</a></li>
+                        <li data-page><a href="javascript:void(0)">14</a></li>
+                        <li data-page><a href="javascript:void(0)">15</a></li>
+                        <li data-next-page><a href="javascript:void(0)"><i class="fas fa-chevron-right" aria-hidden="true"></i><span class="sr-only">próximo</span></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </section>

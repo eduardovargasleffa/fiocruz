@@ -200,6 +200,18 @@ main {
   background: #32786A;
 }
 
+/*------------------------------------*\
+  #PAGE-NEWS
+\*------------------------------------*/
+.news--filter {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.news--filter__background {
+  background: #ededed;
+}
+
 .news--section {
   padding-bottom: 64px;
   padding-top: 64px;
@@ -392,4 +404,3 @@ main {
   height: 250px;
   width: 100%;
 }
-/*# sourceMappingURL=theme.css.map */

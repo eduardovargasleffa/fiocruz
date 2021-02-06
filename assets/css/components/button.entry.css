@@ -177,4 +177,3 @@
 .br-button.loading.primary::after, .br-button.loading.danger::after, .br-button.loading.success::after, .br-button.loading.info::after, .br-button[loading].primary::after, .br-button[loading].danger::after, .br-button[loading].success::after, .br-button[loading].info::after, .br-button.is-loading.primary::after, .br-button.is-loading.danger::after, .br-button.is-loading.success::after, .br-button.is-loading.info::after {
   border-color: var(--button-color) var(--button-color) transparent;
 }
-/*# sourceMappingURL=button.entry.css.map */
