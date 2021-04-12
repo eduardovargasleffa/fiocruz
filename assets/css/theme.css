@@ -1,3 +1,118 @@
+.social--link__change {
+  right: -7px !important;
+  z-index: 999;
+}
+
+.social-links {
+  position: absolute;
+  bottom: -7px;
+  top: auto;
+  right: 0;
+  width: auto;
+  max-width: 32px;
+  height: 32px;
+  line-height: 30px;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  -webkit-transition: max-width .2s linear,padding .2s linear;
+  transition: max-width .2s linear,padding .2s linear;
+  overflow: hidden;
+  padding-right: 32px;
+  background: #fff;
+}
+
+.social-links.open {
+  max-width: 320px;
+  border: 1px solid #ccc;
+  padding-left: 8px;
+}
+
+.social-links .toggle-social-links {
+  background: #fff;
+  opacity: 1;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 33px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 16px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.social-links .toggle-social-links i, .social-links .toggle-social-links span {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  line-height: 30px;
+  -webkit-transition: opacity .2s linear 0s;
+  transition: opacity .2s linear 0s;
+  color: #9e9d9d;
+}
+
+.social-links .toggle-social-links .fa-times {
+  opacity: 0;
+}
+
+.social-links .toggle-social-links svg, .social-links .toggle-social-links span {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 20px !important;
+  top: 5px;
+  left: 0;
+  height: 100%;
+  line-height: 30px;
+  -webkit-transition: opacity .2s linear 0s;
+  transition: opacity .2s linear 0s;
+  color: #9e9d9d;
+}
+
+.social-links a {
+  opacity: 0;
+  -webkit-transition: opacity 0s linear .2s;
+  transition: opacity 0s linear .2s;
+}
+
+.social-links a {
+  padding: 0 4px;
+  text-decoration: none;
+  border: none;
+}
+
+.social-links.open a {
+  opacity: 1;
+  -webkit-transition: opacity 0 linear 0;
+  transition: opacity 0 linear 0;
+}
+
+.social-links.open .toggle-social-links .fa-share-alt {
+  opacity: 0;
+}
+
+.social-links.open .toggle-social-links .fa-times {
+  opacity: 1 !important;
+  color: #9e9d9d;
+}
+
+.social-links.open a {
+  opacity: 1;
+  -webkit-transition: opacity 0 linear 0;
+  transition: opacity 0 linear 0;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
 main {
   background: white;
 }
@@ -8,6 +123,56 @@ main {
 
 .background-white {
   background: white;
+}
+
+.color-highlight {
+  color: #32786A;
+}
+
+/*------------------------------------*\
+  #DEFAULT-FILTER
+\*------------------------------------*/
+.default--filter {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.default--filter__background {
+  background: #ededed;
+}
+
+.default--section {
+  padding-bottom: 64px;
+  padding-top: 64px;
+}
+
+.default--section h5 {
+  color: #32786A;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.default--section h5::after {
+  background: #32786A;
+  content: "";
+  left: 0;
+  height: 1px;
+  position: absolute;
+  margin-top: -.5px;
+  top: 50%;
+  width: 100%;
+  z-index: 1;
+}
+
+.default--section h5 span {
+  background: white;
+  padding: 0 35px;
+  position: relative;
+  z-index: 9;
 }
 
 /*------------------------------------*\
@@ -73,6 +238,63 @@ main {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
+}
+
+/*------------------------------------*\
+  #DEFAULT-BARRA-TOPO-FIOCRUZ
+\*------------------------------------*/
+.barra-fiocruz-wrapper {
+  background: url(../images/fio.jpg);
+}
+
+ul.barra-fiocruz {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 33px;
+  max-width: 950px;
+  margin: 0px auto;
+}
+
+ul.barra-fiocruz li {
+  display: inline;
+}
+
+ul.barra-fiocruz li a.logo-fiocruz {
+  display: block;
+  height: 33px;
+  width: 120px;
+  background: url(../images/logo-fiocruz.jpg);
+}
+
+ul.barra-fiocruz li a.fale-com {
+  display: block;
+  position: absolute;
+  height: 33px;
+  width: 90px;
+  top: 0;
+  left: 120px;
+  background: url(../images/fale-fiocruz.jpg);
+}
+
+ul.barra-fiocruz li a.logo-fundacao {
+  display: block;
+  position: absolute;
+  height: 33px;
+  width: 268px;
+  top: 0;
+  right: 0;
+  background: url(../images/logo-fiocruz-barra.jpg);
+}
+
+ul.barra-fiocruz li a.logo-fiocruz span,
+ul.barra-fiocruz li a.fale-com span,
+ul.barra-fiocruz li a.logo-fundacao span {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
 }
 
 .menu--nav {
@@ -152,6 +374,24 @@ main {
 
 :root {
   --swiper-theme-color: $color-primary-darken-02 !important;
+}
+
+.swiper-container {
+  height: 400px;
+}
+
+/*------------------------------------*\
+  #PAGE-DEFAULT-TODAS-AS-PAGINAS
+\*------------------------------------*/
+.title--default {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.default--section {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 /*------------------------------------*\
@@ -285,110 +525,68 @@ main {
   text-align: center;
 }
 
-.social-links {
-  position: absolute;
-  bottom: -7px;
-  top: auto;
-  right: 0;
-  width: auto;
-  max-width: 32px;
-  height: 32px;
-  line-height: 30px;
-  border: 1px solid #fff;
-  border-radius: 16px;
-  -webkit-transition: max-width .2s linear,padding .2s linear;
-  transition: max-width .2s linear,padding .2s linear;
-  overflow: hidden;
-  padding-right: 32px;
-  background: #fff;
+/*------------------------------------*\
+  #PAGE-CORONAVIRUS
+\*------------------------------------*/
+.coronavirus--section {
+  padding-bottom: 64px;
+  padding-top: 64px;
 }
 
-.social-links.open {
-  max-width: 320px;
-  border: 1px solid #ccc;
-  padding-left: 8px;
+.coronavirus-text--section {
+  background: #32786A;
+  padding: 40px 0;
 }
 
-.social-links .toggle-social-links {
-  background: #fff;
-  opacity: 1;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 33px;
-  height: 32px;
-  line-height: 30px;
+.text__coronavirus {
+  color: white;
+  font-size: 24px;
+  line-height: 36px;
   text-align: center;
-  border-radius: 16px;
-  cursor: pointer;
-  z-index: 1;
 }
 
-.social-links .toggle-social-links i, .social-links .toggle-social-links span {
-  opacity: 1;
-  position: absolute;
-  width: 100%;
-  text-align: center;
+/*------------------------------------*\
+  #PAGE-SISTEMAS-INTERNOS
+\*------------------------------------*/
+.system--section {
+  padding-bottom: 64px;
+  padding-top: 64px;
+}
+
+.system--item-image {
+  position: relative;
+}
+
+.system--item-image::after {
+  content: '';
+  background: rgba(179, 179, 179, 0.7);
+  opacity: 0;
   top: 0;
   left: 0;
-  height: 100%;
-  line-height: 30px;
-  -webkit-transition: opacity .2s linear 0s;
-  transition: opacity .2s linear 0s;
-  color: #9e9d9d;
-}
-
-.social-links .toggle-social-links .fa-times {
-  opacity: 0;
-}
-
-.social-links .toggle-social-links svg, .social-links .toggle-social-links span {
-  opacity: 1;
   position: absolute;
   width: 100%;
-  text-align: center;
-  height: 20px !important;
-  top: 5px;
-  left: 0;
   height: 100%;
-  line-height: 30px;
-  -webkit-transition: opacity .2s linear 0s;
-  transition: opacity .2s linear 0s;
-  color: #9e9d9d;
 }
 
-.social-links a {
-  opacity: 0;
-  -webkit-transition: opacity 0s linear .2s;
-  transition: opacity 0s linear .2s;
-}
-
-.social-links a {
-  padding: 0 4px;
-  text-decoration: none;
-  border: none;
-}
-
-.social-links.open a {
+.system--item-image:hover::after {
   opacity: 1;
-  -webkit-transition: opacity 0 linear 0;
-  transition: opacity 0 linear 0;
+  -webkit-transition: .2s all ease;
+  transition: .2s all ease;
 }
 
-.social-links.open .toggle-social-links .fa-share-alt {
-  opacity: 0;
+.system--item-title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
 }
 
-.social-links.open .toggle-social-links .fa-times {
-  opacity: 1 !important;
-  color: #9e9d9d;
+.site-map-submenu {
+  display: none;
+  padding-left: 15px;
 }
 
-.social-links.open a {
-  opacity: 1;
-  -webkit-transition: opacity 0 linear 0;
-  transition: opacity 0 linear 0;
+.site-map-has-submenu__open + .site-map-submenu {
+  display: block !important;
 }
 
 .features--section {

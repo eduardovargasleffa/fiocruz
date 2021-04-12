@@ -1,5 +1,10 @@
 $light-gray: #F5F6F7;
 
+
+.list-unstyled {
+  list-style: none;
+}
+
 main {
   background: white;
 }
@@ -10,4 +15,56 @@ main {
 
 .background-white {
   background: white;
+}
+
+.color-highlight {
+  color: $color-primary-default;
+}
+
+/*------------------------------------*\
+  #DEFAULT-FILTER
+\*------------------------------------*/
+
+.default--filter {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.default--filter__background {
+  background: $color-secondary-03;
+}
+
+.default--section {
+padding-bottom: 64px;
+padding-top: 64px;
+
+
+h5 {
+    color: $color-primary-default;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+
+    &::after {
+        background: $color-primary-default;
+        content: "";
+        left: 0;
+        height: 1px;
+        position: absolute;
+        margin-top: -.5px;
+        top: 50%;
+        width: 100%;
+        z-index: 1;
+    }
+
+    span {
+        background: white;
+        padding: 0 35px;
+        position: relative;
+        z-index: 9;
+    }
+}
 }

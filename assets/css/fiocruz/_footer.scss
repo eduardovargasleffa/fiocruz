@@ -1,0 +1,8 @@
+.site-map-submenu {
+    display: none;
+    padding-left: 15px;
+}
+
+.site-map-has-submenu__open + .site-map-submenu {
+    display: block !important;
+}

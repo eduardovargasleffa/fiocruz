@@ -1,12 +1,12 @@
 @import "configs/colors";
-@import "extras/share";
+@import "fiocruz/extras/share";
 @import "fiocruz/base";
 @import "fiocruz/images";
 @import "fiocruz/header";
 @import "fiocruz/menu";
 @import "fiocruz/fullbanner";
 @import "fiocruz/pages";
-
+@import "fiocruz/footer";
 
 
 .features--section {
@@ -114,8 +114,6 @@
         }
     }
 }
-
-
 
 .box-map {
     background: $color-primary-default;

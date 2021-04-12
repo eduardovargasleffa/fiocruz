@@ -20,3 +20,62 @@
   justify-content: space-around;
   list-style: none;
 }
+
+/*------------------------------------*\
+  #DEFAULT-BARRA-TOPO-FIOCRUZ
+\*------------------------------------*/
+
+.barra-fiocruz-wrapper {
+  background: url(../images/fio.jpg);
+}
+
+ul.barra-fiocruz {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 33px;
+  max-width: 950px;
+  margin: 0px auto;
+}
+
+ul.barra-fiocruz li {
+  display: inline;
+  
+  a.logo-fiocruz {
+    display: block;
+     height: 33px;
+     width: 120px;
+     background: url(../images/logo-fiocruz.jpg);
+  }
+  
+  a.fale-com {
+    display: block;
+     position: absolute;
+     height: 33px;
+     width: 90px;
+     top: 0;
+     left: 120px;
+     background: url(../images/fale-fiocruz.jpg);
+  }
+  
+  a.logo-fundacao {
+    display: block;
+     position: absolute;
+     height: 33px;
+     width: 268px;
+     top: 0;
+     right: 0;
+     background: url(../images/logo-fiocruz-barra.jpg);
+  }
+
+}
+
+ul.barra-fiocruz li a.logo-fiocruz span,
+ul.barra-fiocruz li a.fale-com span,
+ul.barra-fiocruz li a.logo-fundacao span {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
